@@ -106,6 +106,7 @@ class SPPF(nn.Module):
         return convII
 
 
+# blocks below are substituted by correspond blocks in prof.py
 def classificationProcess(classPreds):
     probs = torch.sigmoid(classPreds)
     classification = torch.argmax(probs, dim = -1)
